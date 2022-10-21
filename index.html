@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div id="calculator">
+        <div id="display"></div>
+        <div class="row">
+            <button class="long-button" onClick="backspace()">Backspace</button>
+            <button class="long-button" onClick="clearDisplay()">Clear</button>
+        </div>
+        <div class="row">
+            <button onClick="numberButton(7)" accesskey="7">7</button>
+            <button onClick="numberButton(8)" accesskey="8">8</button>
+            <button onClick="numberButton(9)" accesskey="9">9</button>
+            <button onClick="operationButton(addition, '+')" accesskey="+">+</button>
+        </div>
+        <div class="row">
+            <button accesskey="4" onClick="numberButton(4)">4</button>
+            <button onClick="numberButton(5)" accesskey="5">5</button>
+            <button onClick="numberButton(6)" accesskey="6">6</button>
+            <button onClick="operationButton(subtraction, '-')" accesskey="-">-</button>
+        </div>
+        <div class="row">
+            <button onClick="numberButton(1)" accesskey="1">1</button>
+            <button onClick="numberButton(2)" accesskey="2">2</button>
+            <button onClick="numberButton(3)" accesskey="3">3</button>
+            <button onClick="operationButton(multiplication, '*')" accesskey="*">*</button>
+        </div>
+        <div class="row">
+            <button onClick="numberButton(0)" accesskey="0">0</button>
+            <button onClick="numberButton('.')" accesskey=".">.</button>
+            <button onClick="calculate()" accesskey="=">=</button>
+            <button onClick="operationButton(division, '/')" accesskey="/">/</button>
+        </div>
+    </div>
+    <h2>Press Alt + Key to Use Your Keyboard</h2>
+    <script src="./script.js"></script>
+</body>
+</html>
